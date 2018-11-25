@@ -32,10 +32,14 @@ class main():
         pass
 
 if __name__ == "__main__":
+    is_ok=True
     try:
         Get_command_variable(1)
     except IndexError:
         print(color("Error:不支持无参数运行!","red"))
+        is_ok=False
         pass
-    main.main()
+    if is_ok:
+        main.main()
+        pass
     pass
