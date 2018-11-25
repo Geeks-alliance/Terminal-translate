@@ -1,0 +1,41 @@
+#!/usr/bin/env python3
+# -*- coding=UTF8 -*-
+
+from translate import Translator
+from termcolor import colored as color
+import sys
+import os
+
+def Get_command_variable(self):
+    o = sys.argv[self]
+    return o
+
+def translate_to_zh(self):
+    translator= Translator(to_lang="zh")
+    translation = translator.translate("%s" % self)
+    return translation
+
+class main():
+    def call_main_mode(self=0):
+        print(color(translate_to_zh(Get_command_variable(1)),"green"))
+        pass
+    def call_command_mode(self=0):
+        result = os.popen(Get_command_variable(2))
+        print(color(translate_to_zh(result.read()),"green"))
+        pass
+    def main(self=0):
+        if Get_command_variable(1) == "-c" or Get_command_variable(1) == "--command":
+            main.call_command_mode()
+        else:
+            main.call_main_mode()
+            pass
+        pass
+
+if __name__ == "__main__":
+    try:
+        Get_command_variable(1)
+    except IndexError:
+        print(color("Error:不支持无参数运行!","red"))
+        pass
+    main.main()
+    pass
