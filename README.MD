@@ -1,12 +1,12 @@
 # Termina translate </br>
-This script can translate other language to chinese!<br>
+This script can translate other language to chinese in terminal<br>
 </br>
 ## Install </br>
 ```bash
-cp -rf translate /bin && chmod 777 /bin/translate
+wget 'https://github.com/auto-kali/Terminal-translate/raw/master/translate' && pip3 install termcolor translate && cp -rf translate /bin && chmod 777 /bin/translate
 ```
 
-## Instructions
+## Use
 ```bash
 translate "text"
 ```
