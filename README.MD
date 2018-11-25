@@ -2,10 +2,16 @@
 This script can translate other language to chinese!<br>
 </br>
 ## Install </br>
-'''cp -rf translate /bin && chmod 777 /bin/translate''' </br>
+```bash
+cp -rf translate /bin && chmod 777 /bin/translate
+```
 
 ## Instructions
-'''translate "text"'''</br>
+```bash
+translate "text"
+```
 or</br>
-'''translate -c "command"'''
+```bash
+translate -c "command"
+```
 
