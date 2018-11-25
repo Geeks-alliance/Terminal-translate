@@ -1,9 +1,9 @@
 # Termina translate </br>
-This script can translate other language to chinese!<br>
+This script can translate other language to chinese in terminal<br>
 </br>
 ## Install </br>
 ```bash
-cp -rf translate /bin && chmod 777 /bin/translate
+pip3 install termcolor translate && cp -rf translate /bin && chmod 777 /bin/translate
 ```
 
 ## Instructions
